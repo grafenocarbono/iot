@@ -5,5 +5,31 @@
   **Download Arduino IDE:**
 
   `wget https://downloads.arduino.cc/arduino-ide/arduino-ide_2.3.2_Linux_64bit.AppImage`
+
+ **File>Preferences>Additional boards manager URLs:**
+
+  [digistump boards](https://github.com/digistump/arduino-boards-index/blob/master/package_digistump_index.json)
+
+**Tools>Board>Boards Manager. Drop down select Contributed and type Digistump AVR Boards then click the “Install” button.**
   
 
+File>Quit
+cd /home/<username>/.arduino15/
+
+wget http://drazzy.com/package_drazzy.com_index.json --no-check-certificate
+
+You will get the following file:
+ package_drazzy.com_index.json
+
+ You will see a file named package_drazzy.json in that folder. Rename it to package_drazzy.com_index.json.
+
+Comprueba si se llama así package_drazzy.com_index.json, en caso contrario tendrás que renombrarlo
+
+
+
+cd /home/grafeno/.arduino15/staging/packages
+wget http://azduino.com/bin/micronucleus/micronucleus-cli-2.5-azd1-x86_64-linux-gnu.tar.bz2
+
+
+Abre de nuevo arduino y busca en 
+Tools>Board>Boards manager...> Type:Contributed> Select ATTinyCore by Spence Konde
