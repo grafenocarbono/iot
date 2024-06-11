@@ -33,3 +33,16 @@ wget http://azduino.com/bin/micronucleus/micronucleus-cli-2.5-azd1-x86_64-linux-
 
 Abre de nuevo arduino y busca en 
 Tools>Board>Boards manager...> Type:Contributed> Select ATTinyCore by Spence Konde
+
+DigiKeyboard.h No such file or directory
+
+cd /tmp
+git clone https://github.com/digistump/DigisparkArduinoIntegration
+cd /tmp/DigisparkArduinoIntegration/libraries
+zip -r digi_key.zip ./DigisparkKeyboard/
+
+Sketch>Include Library>Add .zip library> Busca en el directorio donde se creó el .zip y aparecerá el mensaje:
+Library installed
+
+Continuará....
+
